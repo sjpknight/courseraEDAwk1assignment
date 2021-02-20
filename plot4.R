@@ -23,6 +23,6 @@ with(hpc, plot(Date_time, Sub_metering_1, type="l", ylab = "Energy stub metering
 with(hpc, lines(Date_time, Sub_metering_2, col="red"))
 with(hpc, lines(Date_time, Sub_metering_3, col="blue"))
 with(hpc, legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),
-  lwd = c(2), col = c("black", "red", "blue"), y.intersp = 1.0, yjust = 2.0), cex=0.8)
+ lty = c(1,1), col = c("black", "red", "blue")), cex=0.5, bty="n")
 # plot 4
 with(hpc, plot(Date_time, Global_reactive_power, type="l", xlab="datetime"))
